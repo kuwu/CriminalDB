@@ -35,10 +35,54 @@
 
     <style>
         .jumbotron {
-            background-color: #c06ce2;
+            background-color: #d0d0d0;
             color: white;
         }
+        .panel {
+            border: 1px solid #f4511e;
+            border-radius:0;
+            transition: box-shadow 0.5s;
+        }
 
+        .panel:hover {
+            box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+        }
+
+        .panel-footer .btn:hover {
+            border: 1px solid #f4511e;
+            background-color: #fff !important;
+            color: #f4511e;
+        }
+
+        .panel-heading {
+            color: #fff !important;
+            background-color: #f4511e !important;
+            padding: 25px;
+            border-bottom: 1px solid transparent;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        .panel-footer {
+            background-color: #fff !important;
+        }
+
+        .panel-footer h3 {
+            font-size: 32px;
+        }
+
+        .panel-footer h4 {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .panel-footer .btn {
+            margin: 15px 0;
+            background-color: #f4511e;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -50,44 +94,78 @@
     </div>
 
     <div class="jumbotron">
-        <p>People Mover Ilitch family Downtown Ford Quicken Loans Mexican Town Downtown. Ilitch Family Detroit Quicken
-            Loans Detroit coney island coney dog Chrysler. Tigers Quicken Loans Corktown the big three Ford Quicken
-            Loans Detroit. Midtown coney dog coney island Lions Wayne State University the big three rebirth. Midtown
-            People Mover Tigers Wayne State University GM People Mover People Mover.</p>
-        <input type="submit" value="Submit" class="btn btn-lg btn-success">
-        <input type="submit" value="Submit" class="btn btn-sm btn-danger">
+        <form class="form-inline">
+            <div class="input-group">
+                <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger">Subscribe</button>
+                </div>
+            </div>
+        </form>
     </div>
 
-    <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-12">
-            <h1>This is a heading</h1>
-            <p>People Mover Ilitch family Downtown Ford Quicken Loans Mexican Town Downtown. Ilitch Family Detroit
-                Quicken
-                Loans Detroit coney island coney dog Chrysler. Tigers Quicken Loans Corktown the big three Ford Quicken
-                Loans Detroit. Midtown coney dog coney island Lions Wayne State University the big three rebirth.
-                Midtown
-                People Mover Tigers Wayne State University GM People Mover People Mover.</p>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-            <h1>This is a heading</h1>
-            <p>People Mover Ilitch family Downtown Ford Quicken Loans Mexican Town Downtown. Ilitch Family Detroit
-                Quicken
-                Loans Detroit coney island coney dog Chrysler. Tigers Quicken Loans Corktown the big three Ford Quicken
-                Loans Detroit. Midtown coney dog coney island Lions Wayne State University the big three rebirth.
-                Midtown
-                People Mover Tigers Wayne State University GM People Mover People Mover.</p>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-            <h1>This is a heading</h1>
-            <p>People Mover Ilitch family Downtown Ford Quicken Loans Mexican Town Downtown. Ilitch Family Detroit
-                Quicken
-                Loans Detroit coney island coney dog Chrysler. Tigers Quicken Loans Corktown the big three Ford Quicken
-                Loans Detroit. Midtown coney dog coney island Lions Wayne State University the big three rebirth.
-                Midtown
-                People Mover Tigers Wayne State University GM People Mover People Mover.</p>
+
+        <div class="container-fluid">
+            <div class="text-center">
+                <h2>Filler Text</h2>
+                <h4>filler text filler text filler text filler text</h4>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>Jobs Now</h1>
+                        </div>
+                        <div class="panel-body">
+                            <p>XXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                            <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+                            <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+                            <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+                            <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+                        </div>
+                        <div class="panel-footer">
+                            <h4>xxxxxxx</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>Traning</h1>
+                        </div>
+                        <div class="panel-body">
+                            <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+                            <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+                            <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+                            <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+                            <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+                        </div>
+                        <div class="panel-footer">
+                            <h4>xxxxxxx</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>Support</h1>
+                        </div>
+                        <div class="panel-body">
+                            <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+                            <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+                            <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+                            <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+                            <p>XXXXXXXXXXXXXXXXXXXXXXXX</p>
+                        </div>
+                        <div class="panel-footer">
+                            <h4>xxxxxxx</h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </div>
 
 
 </div>
