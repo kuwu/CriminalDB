@@ -40,7 +40,7 @@ public class HomeController {
 
     String criminalDBUrl = "https://api.imsasllc.com/v3/";
 //    hi = queryCriminalDB(criminalDBUrl,requestData);
-        String sampleDataFile = "/Users/kuwu/Desktop/imsas_response.json";
+    String sampleDataFile = "/Users/kuwu/Desktop/imsas_response.json";
     hi = queryCriminalDB(sampleDataFile);
 
     ObjectMapper mapper = new ObjectMapper();
@@ -48,8 +48,8 @@ public class HomeController {
     try {
       data = mapper.readValue(new File(sampleDataFile), DataResponse.class);
 
-       //This was for testing in debugger
-       //hi = data.Results.Message;
+      //This was for testing in debugger when testing for empty fields
+      //hi = data.Results.Message;
 
       // output test
       for (com.test.data.imsas.Record record : data.Results.Records) {
@@ -60,11 +60,10 @@ public class HomeController {
       e.printStackTrace();
     }
 
-
     return new ModelAndView("welcome", "message", hi);
   }
 
-
+  // reading from a saved JSON file on local machine
   private String queryCriminalDB(String pathFilename) {
     String result = "";
     String line;
@@ -79,11 +78,11 @@ public class HomeController {
     } catch (IOException e) {
       e.printStackTrace();
     }
-
-
+    
     return result;
   }
 
+  // reading form the API
   private String queryCriminalDB(String requestUrl, InputRequest requestData) {
     String result = "";
 
